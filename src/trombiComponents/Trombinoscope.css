@@ -1,0 +1,149 @@
+.search-bar{
+    outline: black;
+    /* background-color: #eeeeee;  */
+    width: 30%;   /* Permet d'ajuster la largeur du champ de saisie à 100% */
+    /* position: relative; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-right: 1%;
+   
+}
+
+.trombi-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trombi-title{
+    font-family: 'Open Sans';
+    font-weight:bold;
+    margin-bottom: 30px;
+}
+.card-border{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin-left: auto ;
+    margin-right: auto;
+    align-items: stretch;
+
+}
+
+.card-information-trombi{
+    width: 250px;
+    font-size: 12px;
+    outline: black;
+    display: none;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    word-wrap: break-word;
+}
+
+.card:hover .card-information-trombi {
+    display:block;
+}
+    
+.card:hover .displayImg-trombi {
+    opacity:0.5;
+    cursor: pointer;
+}
+
+.displayImg-trombi{
+    width: 250px;
+    height: 250px;
+    border: solid black 2.5px; 
+    border-radius: 49%;
+    -webkit-box-shadow: 0px 0px 41px 10px rgba(212,212,212,0.3);
+    -moz-box-shadow: 0px 0px 41px 10px rgba(212,212,212,0.3);
+    box-shadow: 0px 0px 41px 10px rgba(212,212,212,0.3);
+}
+
+.card-action >.edit {
+    color: #FFC107;
+}
+
+.card-action >.delete {
+    color: rgb(201, 10, 10);
+}
+
+.card-name-trombi{
+    /* display : block;  */
+    color:black;
+    margin-top: -25px;
+    font-size: 20px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: red; */
+    border-radius: 50%
+}
+
+.card-name-trombi a {
+    color: rgb(17, 31, 186);
+}
+
+.add{
+    width: 20%;
+    height: 42%s;
+    text-align: center;
+    padding: 6px 0;
+    margin-top: 20px;
+    margin-bottom: 11px;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 30px;
+    font-size: 90%;
+    background:linear-gradient(135deg, #17ead9 0%,#6078ea 100%);
+  }
+
+  .add{
+    background:linear-gradient(135deg, #fad961 0%,#f76b1c 100%);  
+    animation: nom_anim_bouton 1s infinite alternate
+      }
+    @keyframes nom_anim_bouton{
+    from{
+      box-shadow:0 0 5px hsl(0,53%,46%)
+      }
+    to{
+      box-shadow:0 0 15px hsl(0,50%,46%)
+      }
+  }	
+
+.space{
+    height: 50%;
+    margin-bottom: 5%
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*  */
+
+.styled-select {
+    /* background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 16% 0; */
+    height: 75%;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.border{
+    border-left: 1px  solid orange;
+}
+   /* -------------------- Rounded Corners */
+  .semi-square {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  /* -------------------- Colors: Background */
+  
+  .blue {
+    background-color:#eeeeee;
+  }
+ 
+
+  

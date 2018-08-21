@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+.App-logo {
+  /* animation: App-logo-spin infinite 20s linear; */
+  height: 50px;
+  margin-top: 18px;
+}
+
+.App-header {
+  background-color: #2369AD;
+  height: 100px;
+  padding: 5px;
+  color: white;
+}
+
+.App-nav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.App-title {
+  font-size: 15px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+button{
+    /* float:right; */
+    padding:5px 12px;
+    margin:10px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #9898a2;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+
+.btn-circle {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 25px;
+}
+/*  */
+.buttonlogout {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  /* padding: 20px 32px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 100px;
+  cursor: pointer;
+  width: 85px;
+  height: 32px;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+
+/*bouton user */
+button{
+  /* margin: 2rem auto;
+  max-width:400px;
+  border:none;
+  color: white;
+  border-radius: .25rem;
+  font-size: 1.125rem;
+  padding: 20px 60px;
+  cursor:pointer
+     */
+}		
+   
+.bouton1{
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  padding: 6px 0;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 25px;
+  background:linear-gradient(135deg, #17ead9 0%,#6078ea 100%);
+}
+
+.bouton1:hover{
+  animation:nom_anim_bouton1 1s infinite alternate
+}   
+  @keyframes nom_anim_bouton1{
+  from{
+    box-shadow:0 0 5px #6078ea
+    }
+  to{
+    box-shadow:0 0 15px hsl(230, 77%, 25%) 
+    }
+} 
+
+/*bouton add new person */
+.bouton2{
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  padding: 6px 0;
+  margin-top: -11px;
+  margin-bottom: 11px;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 25px;
+  background:linear-gradient(135deg, #17ead9 0%,#6078ea 100%);
+}
+
+.bouton2{
+  background:linear-gradient(135deg, #fad961 0%,#f76b1c 100%);  
+  animation: nom_anim_bouton 1s infinite alternate
+    }
+  @keyframes nom_anim_bouton{
+  from{
+    box-shadow:0 0 5px hsl(0,53%,46%)
+    }
+  to{
+    box-shadow:0 0 15px hsl(0,50%,46%)
+    }
+}	

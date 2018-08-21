@@ -1,0 +1,73 @@
+handleSubmit = (e) => {        
+        e.preventDefault();
+        let postPerson = PersonServices.postPerson(this.state.person);
+        let updatePerson = PersonServices.updatePerson(this.state.person);
+        const {existPerson} = this.state;
+        this.verifPerson(this.state.person.email);
+        let test = this.state.test;
+        console.log('test',test)
+        
+        const isPresent = this.state.person.email;
+
+        let promesseCreate = postPerson
+            .then((response) => {
+                console.log("status 200", response);
+                return response.json();
+            });
+
+        let promesseUpdate =  updatePerson
+            .then((response) => {
+                console.log("status 200", response);
+                return response.json();
+            });
+
+        {
+            ((!test && isPresent) ?
+                promesseUpdate
+                    .then((person) => {
+                        this.props.history.push("/trombinoscope");
+                        let message = "Les informations de " + person.firstname + " " + person.lastname +" ont été mises à jour.";
+                        alert(message);
+                        console.log("update");
+
+                    }) :(
+                promesseCreate
+                    .then((person) => {
+                        this.props.history.push("/trombinoscope");
+                        let message = person.firstname + " " + person.lastname + " ayant \nla couleur préférée: " + person.color
+                                                       + "\nle message de bienvenue: "  + person.welcomeMsg 
+                                                       + "\nl'email: " + person.email + " a été créée."; 
+                        alert(message);
+                        console.log("create");
+
+                    })
+                ))
+
+                .catch((response)=>{
+                        console.log("error", response);
+                        response.json().then((error)=>{
+                            alert(error.message);
+                        })
+                    })
+        }
+        // promesseResponse
+        // .then((person)=>{
+        //     this.props.history.push("/trombinoscope");
+           
+        //     let message1 =   person.firstname + " " + person.lastname + " ayant \nla couleur préférée: " + person.color +
+        //                         "\nle message de bienvenue: "  + person.welcomeMsg +
+        //                         "\nl'email: " + person.email + " a été créée.";                
+            
+        //     let message2 = "Les informations de " + person.firstname + " " + person.lastname +" ont été mises à jour.";
+
+        //     let message3 = ( isPresent ? message2 : message1 );
+            
+        //     alert(message3);
+        // })
+        // .catch((response)=>{
+        //     console.log("error", response);
+        //     response.json().then((error)=>{
+        //         alert(error.message);
+        //     })
+        // })
+    }

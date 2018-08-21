@@ -1,0 +1,152 @@
+.form-person{
+    width:440px;
+    height:610px;
+    background:#ffffff;
+    border-radius:8px;
+    box-shadow:0 0 30px -10px #2369AD;
+    /* gère la distance entre le header de la page et le formulaire */
+    /* margin:calc(25vh - 220px) auto; */
+    /* center le formulaire */
+    margin: auto;
+    padding:10px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    /* position:relative */
+}
+.card {
+    /* la taille pertube le css :( */
+    /* width: 266px;
+    height: 178px; */
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    padding-top: 10px;
+    /* outline: 0.1em solid blue; */
+}
+
+/* .card-image-person {
+    margin-top: 8px;
+    background: khaki;
+    float: center;
+    display: block;
+} */
+
+.displayImg-person{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 4%;
+    
+
+    /* background-position: center center; */
+}
+/* zoom sur image */
+.zoom div img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    outline: 2px solid silver;
+}
+.zoom div:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    outline: 0.2px solid silver;
+    -webkit-box-shadow: 0px 0px 41px 10px silver;
+    -moz-box-shadow: 0px 0px 41px 10px silver;
+    box-shadow: 0px 0px 41px 10px silver;
+
+}
+
+.card-information-person {
+    margin: auto;
+    margin-top: 8px;
+    /* margin-bottom: -9px; */
+    font-size: 14px;
+    /* outline: 2px solid black; */
+    width: 350px;
+    height: 150px;
+    -webkit-box-shadow: 0px 0px 41px 10px silver;
+    -moz-box-shadow: 0px 0px 41px 10px silver;
+    box-shadow: 0px 0px 41px 10px silver;
+
+}
+
+.person-color {
+    width: 50px;
+    height: 15px;
+    margin: 0 0 -3px 5px;
+    display: inline-block;
+}
+
+label {
+    text-align: left;
+}
+modal {
+    background:#6c1212;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px rgb(161, 10, 10);
+    margin:calc(30vh - 220px) auto;
+}
+.modal-title{
+    margin:1px 0;
+    padding-bottom:0px;
+    width:100%;
+    color:#a65e2a;
+    /* border-bottom:3px solid #78788c */
+}
+
+.modal-body{
+    height: 60px;
+    padding:0.5px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.modal-footer > .btn {
+    /* float:right; */
+    padding:5px 12px;
+    margin:0px 0px 0px 0px;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+}
+
+.modal-footer > .btn:hover{
+    background:#78788c;
+    color:#fff
+}
+
+.form{
+    width:440px;
+    height:590px;
+    background:#ffffff;
+    border-radius:8px;
+    box-shadow:0 0 30px -10px #2369AD;
+    /* gère la distance entre le header de la page et le formulaire */
+    /* margin:calc(25vh - 220px) auto; */
+    /* center le formulaire */
+    margin: auto;
+    padding:10px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    /* position:relative */
+    
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+/* 
+-webkit-box-shadow: 0px 0px 41px 10px rgba(212,212,212,0.3);
+-moz-box-shadow: 0px 0px 41px 10px rgba(212,212,212,0.3);
+box-shadow: 0px 0px 41px 10px rgba(212,212,212,0.3);
+*/
